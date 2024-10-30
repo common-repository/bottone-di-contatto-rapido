@@ -1,0 +1,33 @@
+body .bdcr_btn_container {
+	border-radius: 50%;
+	position: fixed;
+	bottom: 20px;
+	width: 60px;
+	height: 60px;
+	z-index: 99999999;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+body .bdcr_btn_container.right {
+	right: 20px;
+}
+
+body .bdcr_btn_container.left {
+	left: 20px;
+}
+
+body .bdcr_btn_container i {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+body .bdcr_btn_container.left img,
+body .bdcr_btn_container.right img {
+	width: 100%;
+}

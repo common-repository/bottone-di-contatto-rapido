@@ -1,0 +1,141 @@
+.bdcr_all_icons_wrap {
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+	overflow: auto;
+	width: 100%;
+	line-height: 0;
+}
+
+.bdcr_icon_wrap {
+	cursor: pointer;
+	border: 2px solid transparent;
+	padding: 4px;
+}
+
+.bdcr_icon_modal_wrap {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	width: 90vw;
+	max-height: 90vh;
+	background: #fff;
+	position: relative;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.bdcr_close_modal {
+	font-size: 30px;
+	text-align: center;
+	width: 40px;
+	float: right;
+	cursor: pointer;
+}
+
+.bdcr_icon_wrap img{
+	width: 50px;
+}
+
+.bdcr_icon_modal_container {
+	margin: auto;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+.bdcr_active_icon {
+	border: 2px solid #2271b1 !important;
+	border-radius: 6px;
+}
+
+#bdcr_settings .handlediv {
+	display: none;
+}
+
+#bdcr_settings .hndle {
+	border-bottom: 1px solid #c3c4c7;
+}
+
+#bdcr_options_save{
+	margin-right: 13px;
+}
+
+.bdcr_icon_select_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 150px;
+	gap: 5px;
+}
+
+.image-class:hover .bdcr_icon_wrap {
+    display: none;
+}
+
+.bdcr_selected_icon {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+}
+
+.bdcr_select_icon_btn {
+	width: 100%;
+	text-align: center;
+	border: 2px solid #2271b1;
+	padding: 5px 0;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #2271b1;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.bdcr_icon_modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background: #0000005e;
+	z-index: 99999;
+	display: none;
+}
+
+.bdcr_button_alignment_setting {
+	display: flex;
+	gap: 30px;
+}
+
+.bdcr_loader {
+	width: 17px;
+	padding: 4px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: #2271b1;
+	--_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+	-webkit-mask: var(--_m);
+	mask: var(--_m);
+	-webkit-mask-composite: source-out;
+	mask-composite: subtract;
+	animation: l3 1s infinite linear;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.bdcr_settings_error {
+	margin: unset;
+}
+
+.bdcr_hide{
+	display: none;
+}
+
+@keyframes l3 {
+	to {
+		transform: rotate(1turn)
+	}
+}
